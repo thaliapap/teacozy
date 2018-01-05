@@ -1,33 +1,58 @@
-/*Universal styles*/
+/* Universal styles */
 
 body{
+  margin:0;
   font-family: Helvetica;
   font-size: 22px;
   color:seashell;
   background-color: black;
-  opacity: 0.9;
+  opacity: .5;
   text-align: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: underline;
+  color:seashell;
+}
+
+h2{
+  margin-bottom: 15px;
 }
 
 /*Header section*/
+
 header{
   display:flex;
+  z-index:1;
   position:fixed;
   height:69px;
+  width:100%;
   border-bottom: 1px solid seashell;
+  align-items: center;
+
 }
 
 .logo{
+  display:flex;
   flex-grow: 1;
+  align-items:center;
   margin-left: 10px;
+}
+
+.logo img{
   height:50px;
+  width: 157.141px;
 }
 
-nav{
-  display:inline-block;
-}
+header nav{
+  display:block;
 
+}
 nav span{
   display:inline-block;
-  text-decoration: underline;
+  justify-content: space-between;
+  padding: 20px 10px;
+
+
 }
